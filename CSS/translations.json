@@ -1,0 +1,34 @@
+{
+    "vi": {
+        "home": "Trang Chủ",
+        "about_us": "Về Chúng Tôi",
+        "activities": "Hoạt Động",
+        "research": "Nghiên Cứu",
+        "search_placeholder": "Tìm kiếm...",
+        "language_switch": {
+            "vi": "Tiếng Việt",
+            "en": "English"
+        },
+        "title": "Hội Fan Jack",
+        "intro": "Chúng tôi cam kết bảo vệ quyền lợi và sự an toàn của trẻ em...",
+        "support_activities": "Hoạt Động Hỗ Trợ Các Em Nhỏ",
+        "tin_tuc": "Tin Tức",
+        "footer": "© 2024 Hội Người Fan Jack. <br> All rights reserved."
+    },
+    "en": {
+        "home": "Home",
+        "about_us": "About Us",
+        "activities": "Activities",
+        "research": "Research",
+        "search_placeholder": "Search...",
+        "language_switch": {
+            "vi": "Vietnamese",
+            "en": "English"
+        },
+        "title": "Fan Jack Association",
+        "intro": "We are committed to protecting the rights and safety of children...",
+        "support_activities": "Support Activities for Children",
+        "tin_tuc": "News",
+        "footer": "© 2024 Fan Jack Association. <br> All rights reserved."
+    }
+}

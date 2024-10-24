@@ -1,0 +1,71 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "messages": [
+    {
+      "id": "1",
+      "firstname": "Edan",
+      "lastname": "Nguyễn",
+      "email": "edanprince2@gmail.com",
+      "phone": "+84 36 574 1416",
+      "message": "Write your message here..."
+    },
+    {
+      "id": "feb7",
+      "firstname": "sadhasd",
+      "lastname": "hehe",
+      "email": "hjeprua1216@gmail.com",
+      "phone": "0977367324",
+      "message": "asdasudkjas"
+    },
+    {
+      "id": "9da2",
+      "firstname": "sadhasd",
+      "lastname": "asdhashd",
+      "email": "hjeprua1216@gmail.com",
+      "phone": "0977367324",
+      "message": "hehehee"
+    },
+    {
+      "id": "2db4",
+      "firstname": "hiep",
+      "lastname": "nguyen",
+      "email": "hjeprua1216@outlook.com",
+      "phone": "0977367324",
+      "message": "hehehehe"
+    },
+    {
+      "id": "3ee6",
+      "firstname": "sadhasd",
+      "lastname": "asdhashd",
+      "email": "hjeprua1216@gmail.com",
+      "phone": "0977367324",
+      "message": "heheheheheheheh"
+    }
+  ]
+}

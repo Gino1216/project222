@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Search Results</h1>
+    <div id="search_results">
+      <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('query'); // Lấy từ khóa tìm kiếm từ URL
+
+    // Hiển thị từ khóa đã tìm kiếm
+    document.getElementById('search_results').innerHTML = `<h2>Results for "${query}":</h2>`;
+
+    // Ví dụ để hiển thị kết quả tìm kiếm tĩnh
+    const dummyData = [
+      { title: 'Example Article 1', link: 'index_paper1.html', description: 'This is a description of example article 1.' },
+      { title: 'Example Article 2', link: 'index_paper2.html', description: 'This is a description of example article 2.' }
+    ];
+
+    // Duyệt qua dữ liệu giả và hiển thị nó
+    dummyData.forEach(result => {
+      const resultItem = `<div>
+                            <a href="${result.link}"><h3>${result.title}</h3></a>
+                            <p>${result.description}</p>
+                          </div>`;
+      document.getElementById('search_results').innerHTML += resultItem;
+    });
+  </script>
+</body>
+</html>

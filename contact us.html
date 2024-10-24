@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <img src="image/logo.png" alt="">
+      <div id="menu">
+        <div class="item item_bottom">
+          <a href="index.html">HOME</a>
+        </div>
+        <div class="item">
+          <a href="about us.html">ABOUT US</a>
+        </div>
+        <div class="item item_world ">
+          <a href="today in world.html">TODAY</a>
+          <!-- <div class="item_city">
+            <div class="city"><a href="new york.html">NEW YORK</a></div>
+            <div class="city"><a href="tokyo.html">TOKYO</a></div>
+            <div class="city"><a href="sydney.html">SYDNEY</a></div>
+            <div class="city"><a href="paris.html">PARIS</a></div>
+            <div class="city"><a href="moskva.html">MOSKVA</a></div>
+          </div> -->
+        </div>
+        <div class="item">
+          <a href="#">CHECK</a>
+        </div>
+        <div class="item">
+          <a href="contact us.html">CONTACT US</a>
+        </div>
+      </div>
+      <form action="" id="search" onsubmit="return searchFunction();">
+        <input type="text" id="search_text" placeholder="Search here..." required>
+        <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="contact_cs">
+    <div class="contact_cs_body">
+      <div class="cs_body_title">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="cs_body_box">
+        <div class="body_box form">
+          <h3>Send a Message</h3>
+          <form>
+            <div class="form_box">
+              <div class="form_box_row">
+                <div class="box_row_input">
+                  <span>First Name</span>
+                  <input type="text" id="firstname" placeholder="Edan" required onblur="CheckFirstName()">
+                  <div id="feedback1"></div>
+                </div>
+                <div class="box_row_input">
+                  <span>Last Name</span>
+                  <input type="text" id="lastname" placeholder="Nguyễn" required onblur="CheckLastName()">
+                  <div id="feedback2"></div>
+                </div>
+              </div>
+              <div class="form_box_row">
+                <div class="box_row_input">
+                  <span>Email</span>
+                  <input type="text" id="email" placeholder="edanprince2@gmail.com" required onblur="Checkemail()">
+                  <div id="feedback3"></div>
+                </div>
+                <div class="box_row_input">
+                  <span>Mobile</span>
+                  <input type="number" id="phone" placeholder="+84 36 574 1416" required onblur="Checkphone()">
+                  <div id="feedback4"></div>
+                </div>
+              </div>
+              <div class="form_box_row2">
+                <div class="box_row_input">
+                  <span>Message</span>
+                  <textarea id="message" placeholder="Write your message here..." required onblur="CheckMessage()"></textarea>
+                  <div id="feedback5"></div>
+                </div>
+              </div>
+              <div class="form_box_row2">
+                <div class="box_row_input">
+                  <input onclick="checksend()" type="submit" value="Send">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="body_box info">
+          <h3>Contact Info</h3>
+          <div class="info_box">
+            <div>
+              <span><ion-icon name="location-outline"></ion-icon></span>
+              <p>Cao Tốc Láng - Hòa Lạc, Tây Mỗ, Nam Từ Liêm, Hà Nội</p>
+            </div>
+            <div>
+              <span><ion-icon name="mail-outline"></ion-icon></span>
+              <a href="mailto:edanprince2@gmail.com">DNBC@hnmu.edu.vn</a>
+            </div>
+            <div>
+              <span><ion-icon name="call-outline"></ion-icon></span>
+              <a href="tel:+84 36 574 1416">+84 12 345 6789</a>
+            </div>
+            <ul class="sci">
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="body_box map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.70485726061!2d105.73552528599495!3d21.004464838706326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453d4ead47a63%3A0x9af352cfc1f411a1!2sVinhomes%20Smart%20City%20T%C3%A2y%20M%E1%BB%97!5e0!3m2!1sen!2sus!4v1727361770717!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-row-1 ">
+        <h2>About US</h2>
+        <a href="about us.html">Blog</a>
+        <a href="about us.html">Demo</a>
+        <a href="about us.html">Customer</a>
+        <a href="about us.html">Terms of Service</a>
+      </div>
+  
+      <div class="footer-row-1">
+        <h2>Contact US</h2>
+        <a href="contact us.html">Jobs</a>
+        <a href="contact us.html">Support</a>
+        <a href="contact us.html">Contact</a>
+        <a href="contact us.html">Sponsorships</a>
+      </div>
+  
+      <div class="footer-row-1">
+        <h2>Social Media</h2>
+        <a href="index.html">Instagram</a>
+        <a href="index.html">Facebook</a>
+        <a href="index.html">Youtube</a>
+        <a href="index.html">Twitter</a>
+      </div>
+      <div class="footer-email-form">
+        <h2>Join our newsletter</h2>
+        <input type="email" placeholder="Enter your email address" id="footer-email">
+        <input type="Submit" value="Sign up" id="footer-email-btn">
+      </div>
+    </div>
+  </div>
+  <script src="javascript/contact_us.js"></script>
+</body>
+
+</html>

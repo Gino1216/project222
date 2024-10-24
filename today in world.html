@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TODAY IN WORLD</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="javascript/backtop.js"></script>
+  <script src="javascript/today.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <img src="image/logo.png" alt="">
+      <div id="menu">
+        <div class="item item_bottom">
+          <a href="index.html">HOME</a>
+        </div>
+        <div class="item">
+          <a href="about us.html">ABOUT US</a>
+        </div>
+        <div class="item item_world ">
+          <a href="today in world.html">TODAY</a>
+          <!-- <div class="item_city">
+            <div class="city"><a href="new york.html">NEW YORK</a></div>
+            <div class="city"><a href="tokyo.html">TOKYO</a></div>
+            <div class="city"><a href="sydney.html">SYDNEY</a></div>
+            <div class="city"><a href="paris.html">PARIS</a></div>
+            <div class="city"><a href="moskva.html">MOSKVA</a></div>
+          </div> -->
+        </div>
+        <div class="item">
+          <a href="#">CHECK</a>
+        </div>
+        <div class="item">
+          <a href="contact us.html">CONTACT US</a>
+        </div>
+        </div>
+      <form action="" id="search">
+        <input type="text" id="search_text" placeholder="Search here..." required>
+        <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="body">
+    <div id="content_city">
+      <h2>Today In World</h2>
+      <div class="body_title_menu">
+
+      </div>
+      <form>
+        <div class="form_box">
+          <div class="form_box_row">
+            <div class="box_row_input">
+              <span>First Name</span>
+              <input type="text" id="firstname" placeholder="Edan" required onblur="CheckFirstName()">
+              <div id="feedback1"></div>
+            </div>
+            <div class="box_row_input">
+              <span>Last Name</span>
+              <input type="text" id="lastname" placeholder="Nguyễn" required onblur="CheckLastName()">
+              <div id="feedback2"></div>
+            </div>
+          </div>
+          <div class="form_box_row">
+            <div class="box_row_input">
+              <span>Email</span>
+              <input type="text" id="email" placeholder="edanprince2@gmail.com" required onblur="Checkemail()">
+              <div id="feedback3"></div>
+            </div>
+            <div class="box_row_input">
+              <span>Mobile</span>
+              <input type="number" id="phone" placeholder="+84 36 574 1416" required onblur="Checkphone()">
+              <div id="feedback4"></div>
+            </div>
+          </div>
+          <div class="form_box_row">
+            <div class="box_row_input">
+              <span>Upload Images</span>
+              <input type="file" id="upload_images" accept="image/*" multiple required>
+              <div id="feedback_images"></div>
+            </div>
+          </div>
+          <div class="form_box_row">
+            <div class="box_row_input">
+              <span>Select Region</span>
+              <select id="region" required>
+                <option value="">Chọn vùng miền</option>
+                <option value="Bắc Bộ">Bắc Bộ</option>
+                <option value="Trung Bộ">Trung Bộ</option>
+                <option value="Nam Bộ">Nam Bộ</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form_box_row">
+            <div class="box_row_input">
+              <span>Select Province</span>
+              <select id="province" required>
+                <option value="">Chọn tỉnh thành</option>
+              </select>
+            </div>
+          </div>
+          <div class="form_box_row2">
+            <div class="box_row_input">
+              <span>Message</span>
+              <textarea id="message" placeholder="Write your message here..." required
+                onblur="CheckMessage()"></textarea>
+              <div id="feedback5"></div>
+            </div>
+          </div>
+          <div class="form_box_row2">
+            <div class="box_row_input">
+              <input onclick="checksend()" type="submit" value="Send">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="content_city_body">
+      <div class="content_city1">
+        <div class="city_btn">
+          <div class="city_btn_img">
+            <a href="todayinworld_paper.html"><img src="image/imge_05.jpg" alt=""></a>
+          </div>
+          <div class="city_btn_title">
+            <a href="todayinworld_paper.html">
+              <h3>How powerful is the US battleship USS Ralph Johnson operating in the South China Sea?</h3>
+            </a>
+            <h5>13:00 03/01/2023</h5>
+            <span>While US Assistant Secretary of State for East Asia David R. Stilwell, stated that Washington would
+              not claim to be neutral on maritime disputes in the South China Sea, the US Navy released images of the
+              USS Ralph. Johnson operates near...</span>
+          </div>
+        </div>
+
+        <div class="city_btn">
+          <div class="city_btn_img">
+            <a href="todayinworld_paper.html"><img src="image/imge_06.jpg" alt=""></a>
+          </div>
+          <div class="city_btn_title">
+            <a href="todayinworld_paper.html">
+              <h3>Harry and Meghan are expected to return to the US at the earliest after the end of the funeral.</h3>
+            </a>
+            <h5>14:00 04/01/2023</h5>
+            <span>Harry and Harry miss their two children very much after more than two weeks of separation and are
+              expected to leave England as soon as possible after the Queen's funeral is over."Meghan and Harry prepared
+              to return to Montecito almost immedia...</span>
+          </div>
+        </div>
+
+        <div class="city_btn">
+          <div class="city_btn_img">
+            <a href="todayinworld_paper.html"><img src="image/imge_07.jpg" alt=""></a>
+          </div>
+          <div class="city_btn_title">
+            <a href="todayinworld_paper.html">
+              <h3>COVID-19 epidemic: China increases the number of areas where the blockade order has been lifted.</h3>
+            </a>
+            <h5>15:00 01/01/2023</h5>
+            <span>According to official data released on December 12, the number of high-risk areas decreased to about
+              4,500, down 85% from more than 30,000 on December 7 when China announced new regulations on prevention and
+              control. COVID-19 pandemic.</span>
+          </div>
+        </div>
+
+        <div class="city_btn">
+          <div class="city_btn_img">
+            <a href="todayinworld_paper.html"><img src="image/imge_08.jpg" alt=""></a>
+          </div>
+          <div class="city_btn_title">
+            <a href="todayinworld_paper.html">
+              <h3>Hungary vetoes EU aid for Ukraine, bloc delays decision on funds for Budapest.</h3>
+            </a>
+            <h5>06:00 30/12/2022</h5>
+            <span>BRUSSELS (Reuters) -Hungary vetoed an 18 billion euro ($19 bln) loan to Ukraine from the European
+              Union on Tuesday as its row with the bloc over undermining democracy rumbled on and the other 26 member
+              states delayed a decision on...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="city_banner">
+        <a href="todayinworld_paper.html"><img src="image/banner_04.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-row-1 ">
+        <h2>About US</h2>
+        <a href="about us.html">Blog</a>
+        <a href="about us.html">Demo</a>
+        <a href="about us.html">Customer</a>
+        <a href="about us.html">Terms of Service</a>
+      </div>
+
+      <div class="footer-row-1">
+        <h2>Contact US</h2>
+        <a href="contact us.html">Jobs</a>
+        <a href="contact us.html">Support</a>
+        <a href="contact us.html">Contact</a>
+        <a href="contact us.html">Sponsorships</a>
+      </div>
+
+      <div class="footer-row-1">
+        <h2>Social Media</h2>
+        <a href="index.html">Instagram</a>
+        <a href="index.html">Facebook</a>
+        <a href="index.html">Youtube</a>
+        <a href="index.html">Twitter</a>
+      </div>
+      <div class="footer-email-form">
+        <h2>Join our newsletter</h2>
+        <input type="email" placeholder="Enter your email address" id="footer-email">
+        <input type="Submit" value="Sign up" id="footer-email-btn">
+      </div>
+    </div>
+  </div>
+  <div id="backend">
+    <i class="fa-sharp fa-solid fa-chevron-up"></i>
+  </div>
+  <script src="javascript/regions.js"></script>
+</body>
+
+</html>
